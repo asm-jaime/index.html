@@ -19,17 +19,21 @@
       }
     }
 </script>
-<script type="text/babel" data-presets="react" data-type="module" src="component.js"></script>
+
+<script type="text/babel" data-presets="react" data-type="module" src="component1.js"></script>
+<script type="text/babel" data-presets="react" data-type="module" src="component2.js"></script>
 
 <script async type="text/babel" data-type="module">
     import React, { StrictMode } from 'react';
     import { createRoot } from 'react-dom/client';
     import { useState, useEffect, useRef } from 'react';
 
-    const FunctionalComponent = window.FunctionalComponent;
+    const FunctionalComponent1 = window.FunctionalComponent1;
+    const FunctionalComponent2 = window.FunctionalComponent2;
 
     const routes = [
-      { name: 'Functional Component from component.js', component: FunctionalComponent },
+      { name: 'Functional Component 1', component: FunctionalComponent1 },
+      { name: 'Functional Component 2', component: FunctionalComponent2 },
     ];
 
     const Router = ({ routes }) => {
